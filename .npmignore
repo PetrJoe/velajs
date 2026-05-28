@@ -1,5 +1,7 @@
 .next
 node_modules
+.env
+*.tgz
 *.tsbuildinfo
 npm-debug.log*
 pnpm-debug.log*

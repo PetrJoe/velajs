@@ -2,6 +2,25 @@
   "name": "velajs",
   "version": "0.2.7",
   "description": "A fullstack framework starter for Next.js, Knex, PostgreSQL, TypeScript, and Tailwind CSS.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "README.md",
+    ".env.example",
+    "Dockerfile",
+    "docker-compose.yml",
+    "eslint.config.mjs",
+    "knexfile.ts",
+    "middleware.ts",
+    "next.config.ts",
+    "postcss.config.js",
+    "tailwind.config.ts",
+    "tsconfig.json",
+    "vitest.config.ts",
+    "next-env.d.ts",
+    "src"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",

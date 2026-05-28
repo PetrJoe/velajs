@@ -1,0 +1,4 @@
+# Copy this file to .npmrc or configure your CI environment with NPM_TOKEN.
+# The token must have publish permission and bypass 2FA enabled if your account enforces 2FA.
+//registry.npmjs.org/:_authToken=${NPM_TOKEN}
+always-auth=true
