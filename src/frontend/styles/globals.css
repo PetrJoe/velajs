@@ -4,26 +4,43 @@
 
 :root {
   color-scheme: light;
+  --bg: #f8fafc;
+  --fg: #111827;
+  --muted: #6b7280;
 }
 
 .dark {
   color-scheme: dark;
+  --bg: #020617;
+  --fg: #f8fafc;
+  --muted: #94a3b8;
 }
 
 body {
-  @apply bg-slate-50 text-ink-900 antialiased dark:bg-slate-950 dark:text-slate-100;
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @layer components {
   .nf-page {
-    @apply mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 80rem;
+    padding: 2rem 1rem;
   }
 
   .nf-section-title {
-    @apply text-lg font-semibold text-ink-900 dark:text-white;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--fg);
   }
 
   .nf-muted {
-    @apply text-sm text-ink-500 dark:text-slate-400;
+    font-size: 0.875rem;
+    color: var(--muted);
   }
 }

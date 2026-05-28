@@ -35,7 +35,7 @@ export abstract class BaseRepository<TRecord extends object> {
     const total = Number(totalResult?.count ?? 0);
 
     return {
-      data,
+      data: data as TRecord[],
       meta: {
         page,
         perPage,
