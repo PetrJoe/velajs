@@ -1,6 +1,6 @@
-# vorajs
+# velajs
 
-vorajs is a Django-inspired, TypeScript-native fullstack starter for building modular Next.js applications with PostgreSQL, Knex, Zod, and Tailwind CSS.
+velajs is a Django-inspired, TypeScript-native fullstack starter for building modular Next.js applications with PostgreSQL, Knex, Zod, and Tailwind CSS.
 
 It favors visible code, explicit boundaries, and generator-driven productivity without hiding the application behind framework magic.
 
