@@ -1,8 +1,8 @@
 {
-  "name": "vorajs",
+  "name": "velajs",
   "version": "0.1.0",
   "private": true,
-  "description": "A Django-inspired fullstack framework starter for Next.js, Knex, PostgreSQL, TypeScript, and Tailwind CSS.",
+  "description": "A fullstack framework starter for Next.js, Knex, PostgreSQL, TypeScript, and Tailwind CSS.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
