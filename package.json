@@ -1,7 +1,6 @@
 {
   "name": "velajs",
   "version": "0.2.7",
-  "private": true,
   "description": "A fullstack framework starter for Next.js, Knex, PostgreSQL, TypeScript, and Tailwind CSS.",
   "scripts": {
     "dev": "next dev",
