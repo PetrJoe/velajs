@@ -1,13 +1,13 @@
 {
   "name": "velajs",
-  "version": "0.1.0",
+  "version": "0.2.7",
   "private": true,
   "description": "A fullstack framework starter for Next.js, Knex, PostgreSQL, TypeScript, and Tailwind CSS.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest",
     "make": "tsx src/cli/index.ts",
@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "@testing-library/react": "latest",
+    "@typescript-eslint/parser": "latest",
     "@types/node": "latest",
     "@types/pg": "latest",
     "@types/react": "latest",
