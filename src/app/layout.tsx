@@ -1,2 +1,15 @@
-export { metadata } from "@/frontend/app/layout";
-export { default } from "@/frontend/app/layout";
+import type { Metadata } from "next";
+import "@/frontend/styles/globals.css";
+
+export const metadata: Metadata = {
+  title: "velajs",
+  description: "TypeScript-first fullstack starter for Next.js, PostgreSQL, Knex, and Tailwind CSS."
+};
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}

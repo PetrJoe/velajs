@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "@/frontend/styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "vorajs",
-  description: "Django-inspired fullstack development for Next.js."
+  title: "velajs",
+  description: "TypeScript-first fullstack starter for Next.js, PostgreSQL, Knex, and Tailwind CSS."
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
