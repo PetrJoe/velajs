@@ -1,9 +1,9 @@
 {
-  "name": "@voradev/nextforge",
-  "version": "0.2.7",
+  "name": "@voradev/nexar",
+  "version": "0.2.8",
   "description": "A fullstack framework starter for Next.js, Knex, PostgreSQL, TypeScript, and Tailwind CSS.",
   "bin": {
-    "nextforge": "bin/nextforge.js"
+    "nexar": "bin/nexar.js"
   },
   "publishConfig": {
     "access": "public"

@@ -10,7 +10,7 @@ export default function TestingPage() {
       </div>
       <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-950">Testing</h1>
       <p className="mt-3 text-lg text-slate-600 max-w-2xl">
-        nextforge uses Vitest with @testing-library/react for testing. The framework includes
+        nexar uses Vitest with @testing-library/react for testing. The framework includes
         a configured test environment with jsdom for component testing.
       </p>
 

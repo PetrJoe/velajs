@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.2.7-blue" alt="Version" />
+  <img src="https://img.shields.io/badge/version-0.2.8-blue" alt="Version" />
   <img src="https://img.shields.io/badge/license-MIT-green" alt="License" />
   <img src="https://img.shields.io/badge/TypeScript-strict-blue" alt="TypeScript Strict" />
   <img src="https://img.shields.io/badge/PRs-welcome-brightgreen" alt="PRs Welcome" />
@@ -8,7 +8,7 @@
 <br />
 
 <div align="center">
-  <h1>nextforge</h1>
+  <h1>nexar</h1>
   <p><strong>TypeScript-first fullstack framework for Next.js, PostgreSQL, Knex, and Tailwind CSS</strong></p>
   <p>Build enterprise-grade Next.js applications with structure, generators, security, and type safety — from day one.</p>
 </div>
@@ -19,7 +19,7 @@
 
 ## Overview
 
-**nextforge** is a production-ready fullstack framework built on top of Next.js. It provides a modular monolith architecture with:
+**nexar** is a production-ready fullstack framework built on top of Next.js. It provides a modular monolith architecture with:
 
 - **Scaffolding CLI** — Generate apps, resources, migrations, and UI components
 - **Authentication** — Password hashing (scrypt), HMAC-signed sessions, auth API routes
@@ -38,7 +38,7 @@
 ## Quick Start
 
 ```bash
-npx @voradev/nextforge create my-app
+npx @voradev/nexar create my-app
 cd my-app
 npm install
 cp .env.example .env
@@ -303,7 +303,7 @@ Comprehensive documentation is available at **`/docs`** when running the applica
 
 ## Architecture
 
-nextforge follows a **modular monolith** architecture:
+nexar follows a **modular monolith** architecture:
 
 ```
 HTTP Request
@@ -344,7 +344,7 @@ Response ─────────────── Standard `{ data }` or `{
 
 We welcome contributions! See the [Contributing Guide](/docs/contributing) for details.
 
-- Report bugs via [GitHub Issues](https://github.com/nextforge/nextforge/issues)
+- Report bugs via [GitHub Issues](https://github.com/nexar/nexar/issues)
 - Submit pull requests for bug fixes or features
 - Improve documentation and examples
 
@@ -352,13 +352,13 @@ We welcome contributions! See the [Contributing Guide](/docs/contributing) for d
 
 ## License
 
-MIT &copy; nextforge
+MIT &copy; nexar
 
 ---
 
 ## Changelog
 
-### 0.2.7
+### 0.2.8
 
 - Initial public release
 - Modular app architecture with CLI generators

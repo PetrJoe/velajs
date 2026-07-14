@@ -118,7 +118,7 @@ export default function DocsLayout({ children }: { children: React.ReactNode }) 
               <span className="grid size-8 place-items-center rounded-lg bg-gradient-to-br from-slate-900 to-slate-700 text-[13px] font-bold text-white shadow-sm">
                 N
               </span>
-              <span className="text-slate-900">nextforge</span>
+              <span className="text-slate-900">nexar</span>
             </Link>
             <span className="hidden text-sm text-slate-400 sm:inline">/</span>
             <span className="hidden items-center gap-1.5 text-sm font-medium text-slate-600 sm:inline-flex">
@@ -142,7 +142,7 @@ export default function DocsLayout({ children }: { children: React.ReactNode }) 
               </kbd>
             </button>
             <a
-              href="https://github.com/nextforge/nextforge"
+              href="https://github.com/nexar/nexar"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden rounded-lg p-1.5 text-slate-500 transition hover:bg-slate-100 hover:text-slate-900 sm:inline-flex"
@@ -251,7 +251,7 @@ export default function DocsLayout({ children }: { children: React.ReactNode }) 
                   <p className="text-xs font-medium text-slate-600">Need help?</p>
                   <p className="mt-0.5 text-xs text-slate-500">
                     Open an issue on{" "}
-                    <a href="https://github.com/nextforge/nextforge" target="_blank" rel="noopener noreferrer" className="font-medium text-slate-900 underline">
+                    <a href="https://github.com/nexar/nexar" target="_blank" rel="noopener noreferrer" className="font-medium text-slate-900 underline">
                       GitHub
                     </a>.
                   </p>

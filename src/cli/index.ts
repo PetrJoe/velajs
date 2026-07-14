@@ -20,7 +20,7 @@ const aliases: Record<string, (name: string) => Promise<void>> = {
 async function main() {
   const handler = aliases[command];
   if (!handler) {
-    console.log("nextforge CLI");
+    console.log("nexar CLI");
     console.log("Usage: npm run make:<app|resource|migration|ui> <name>");
     return;
   }

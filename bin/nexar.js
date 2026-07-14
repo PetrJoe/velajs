@@ -91,27 +91,27 @@ async function main() {
 
   if (!command || command === "--help" || command === "-h") {
     console.log(`
-  nextforge CLI — Create new nextforge projects
+  nexar CLI — Create new nexar projects
 
   Usage:
-    npx @voradev/nextforge create <project-name>
+    npx @voradev/nexar create <project-name>
 
   Examples:
-    npx @voradev/nextforge create my-app
-    npx @voradev/nextforge create my-blog-app
+    npx @voradev/nexar create my-app
+    npx @voradev/nexar create my-blog-app
 `);
     process.exit(0);
   }
 
   if (command !== "create") {
     console.error(`Unknown command: ${command}`);
-    console.error("Usage: npx @voradev/nextforge create <project-name>");
+    console.error("Usage: npx @voradev/nexar create <project-name>");
     process.exit(1);
   }
 
   if (!projectName) {
     console.error("Error: Please specify a project name.");
-    console.error("Usage: npx @voradev/nextforge create <project-name>");
+    console.error("Usage: npx @voradev/nexar create <project-name>");
     process.exit(1);
   }
 
@@ -131,7 +131,7 @@ async function main() {
     }
   }
 
-  console.log(`\n  \u2728 Creating nextforge project: ${projectName}\n`);
+  console.log(`\n  \u2728 Creating nexar project: ${projectName}\n`);
 
   mkdirSync(targetDir, { recursive: true });
 
@@ -194,14 +194,14 @@ dist/
   console.log("  \ud83d\udce6 Initializing git...");
   run("git init", targetDir, "git init");
   run("git add -A", targetDir, "git add");
-  run('git commit -m "Initial commit from nextforge"', targetDir, "git commit");
+  run('git commit -m "Initial commit from nexar"', targetDir, "git commit");
 
   console.log(`
   \u2705 Successfully created "${projectName}"!
 
-  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
     ${projectName}
-  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 
   Next steps:
 
@@ -209,7 +209,7 @@ dist/
     npm run db:migrate
     npm run dev
 
-  Documentation: https://nextforge.dev/docs
+  Documentation: https://nexar.dev/docs
 `);
 }
 

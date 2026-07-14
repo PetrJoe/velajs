@@ -93,7 +93,7 @@ export default function CliPage() {
       </div>
       <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-950">CLI Reference</h1>
       <p className="mt-3 text-lg text-slate-600 max-w-2xl">
-        nextforge ships with a powerful scaffolding CLI that accelerates development by generating
+        nexar ships with a powerful scaffolding CLI that accelerates development by generating
         consistent, type-safe code following framework conventions.
       </p>
 

@@ -21,7 +21,7 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
         <div className="mb-6">
           <Link href="/" className="flex items-center gap-3 text-sm font-semibold tracking-tight">
             <span className="grid size-8 place-items-center rounded-lg bg-slate-950 text-[13px] text-white shadow-sm">V</span>
-            <span>nextforge</span>
+            <span>nexar</span>
           </Link>
         </div>
         <nav className="space-y-1">
