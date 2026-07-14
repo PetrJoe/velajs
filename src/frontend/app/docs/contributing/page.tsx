@@ -8,7 +8,7 @@ export default function ContributingPage() {
         <span className="size-2 rounded-full bg-indigo-500" />
         Contributing
       </div>
-      <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-950">Contributing to velajs</h1>
+      <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-950">Contributing to nextforge</h1>
       <p className="mt-3 text-lg text-slate-600 max-w-2xl">
         We welcome contributions from the community. Whether it&apos;s fixing a bug, adding a feature,
         improving documentation, or proposing new ideas — every contribution makes the framework better.
@@ -24,8 +24,8 @@ export default function ContributingPage() {
 
       <Section title="Development Setup">
         <p>Get started with local development:</p>
-        <CodeBlock>{`git clone https://github.com/velajs/velajs.git
-cd velajs
+        <CodeBlock>{`git clone https://github.com/nextforge/nextforge.git
+cd nextforge
 npm install
 cp .env.example .env
 npm run db:migrate
@@ -124,7 +124,7 @@ npm run lint          # ESLint`}</CodeBlock>
       <Section title="Getting Help">
         <p>If you need help with the contribution process:</p>
         <ul className="mt-4 list-inside list-disc space-y-2 text-sm text-slate-600">
-          <li>Open a <a href="https://github.com/velajs/velajs/discussions" className="font-medium text-slate-900 underline" target="_blank" rel="noopener noreferrer">GitHub Discussion</a></li>
+          <li>Open a <a href="https://github.com/nextforge/nextforge/discussions" className="font-medium text-slate-900 underline" target="_blank" rel="noopener noreferrer">GitHub Discussion</a></li>
           <li>Check the          <Link href={"/docs" as any} className="font-medium text-slate-900 underline">documentation</Link></li>
           <li>Review existing issues and PRs for context</li>
         </ul>

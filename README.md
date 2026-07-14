@@ -8,7 +8,7 @@
 <br />
 
 <div align="center">
-  <h1>velajs</h1>
+  <h1>nextforge</h1>
   <p><strong>TypeScript-first fullstack framework for Next.js, PostgreSQL, Knex, and Tailwind CSS</strong></p>
   <p>Build enterprise-grade Next.js applications with structure, generators, security, and type safety — from day one.</p>
 </div>
@@ -19,7 +19,7 @@
 
 ## Overview
 
-**velajs** is a production-ready fullstack framework built on top of Next.js. It provides a modular monolith architecture with:
+**nextforge** is a production-ready fullstack framework built on top of Next.js. It provides a modular monolith architecture with:
 
 - **Scaffolding CLI** — Generate apps, resources, migrations, and UI components
 - **Authentication** — Password hashing (scrypt), HMAC-signed sessions, auth API routes
@@ -38,7 +38,7 @@
 ## Quick Start
 
 ```bash
-npx velajs create my-app
+npx nextforge create my-app
 cd my-app
 npm install
 cp .env.example .env
@@ -303,7 +303,7 @@ Comprehensive documentation is available at **`/docs`** when running the applica
 
 ## Architecture
 
-velajs follows a **modular monolith** architecture:
+nextforge follows a **modular monolith** architecture:
 
 ```
 HTTP Request
@@ -344,7 +344,7 @@ Response ─────────────── Standard `{ data }` or `{
 
 We welcome contributions! See the [Contributing Guide](/docs/contributing) for details.
 
-- Report bugs via [GitHub Issues](https://github.com/velajs/velajs/issues)
+- Report bugs via [GitHub Issues](https://github.com/nextforge/nextforge/issues)
 - Submit pull requests for bug fixes or features
 - Improve documentation and examples
 
@@ -352,7 +352,7 @@ We welcome contributions! See the [Contributing Guide](/docs/contributing) for d
 
 ## License
 
-MIT &copy; velajs
+MIT &copy; nextforge
 
 ---
 

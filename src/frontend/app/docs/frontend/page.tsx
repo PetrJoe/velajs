@@ -10,7 +10,7 @@ export default function FrontendPage() {
       </div>
       <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-950">Frontend</h1>
       <p className="mt-3 text-lg text-slate-600 max-w-2xl">
-        velajs ships with a comprehensive UI component library, responsive layouts, dark mode support,
+        nextforge ships with a comprehensive UI component library, responsive layouts, dark mode support,
         and a design token system — all built with Tailwind CSS v4.
       </p>
 

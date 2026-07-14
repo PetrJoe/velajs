@@ -10,7 +10,7 @@ export default function AuthenticationPage() {
       </div>
       <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-950">Authentication</h1>
       <p className="mt-3 text-lg text-slate-600 max-w-2xl">
-        velajs provides a complete authentication system with password hashing, session management,
+        nextforge provides a complete authentication system with password hashing, session management,
         and API routes — all powered by Node.js built-in crypto, with zero additional dependencies.
       </p>
 

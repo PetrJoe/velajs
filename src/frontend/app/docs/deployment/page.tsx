@@ -10,7 +10,7 @@ export default function DeploymentPage() {
       </div>
       <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-950">Deployment</h1>
       <p className="mt-3 text-lg text-slate-600 max-w-2xl">
-        Deploy your velajs application to production with Docker, managed hosting, or the
+        Deploy your nextforge application to production with Docker, managed hosting, or the
         CI/CD pipeline. This guide covers all deployment scenarios.
       </p>
 
@@ -71,7 +71,7 @@ CMD ["npm", "start"]`}</CodeBlock>
 
         <h3 className="mt-6 text-lg font-semibold text-slate-900">Build and run</h3>
         <CodeBlock>{`# Build the image
-docker build -t velajs-app .
+docker build -t nextforge-app .
 
 # Run with environment variables
 docker run -p 3000:3000 \\
@@ -79,7 +79,7 @@ docker run -p 3000:3000 \\
   -e DATABASE_URL=postgres://... \\
   -e AUTH_SECRET=your-secret \\
   -e APP_URL=https://myapp.com \\
-  velajs-app`}</CodeBlock>
+  nextforge-app`}</CodeBlock>
       </Section>
 
       <Section title="CI/CD Pipeline">
@@ -103,7 +103,7 @@ jobs:
       postgres:
         image: postgres:16
         env:
-          POSTGRES_DB: velajs_test
+          POSTGRES_DB: nextforge_test
         ports:
           - 5432:5432
     steps:

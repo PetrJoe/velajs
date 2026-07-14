@@ -1,8 +1,8 @@
-# @velajs — Framework Audit & Roadmap
+# @nextforge — Framework Audit & Roadmap
 
 ## Current state
 
-@velajs (internally `velajs`, v0.2.7) is a **fullstack starter** built on Next.js, Knex, PostgreSQL, Zod, and Tailwind. It provides structure and generators but is not yet a **standard framework** in the ecosystem sense.
+@nextforge (internally `nextforge`, v0.2.7) is a **fullstack starter** built on Next.js, Knex, PostgreSQL, Zod, and Tailwind. It provides structure and generators but is not yet a **standard framework** in the ecosystem sense.
 
 ### What exists today
 
@@ -37,10 +37,10 @@
 
 ### 1. Identity & Branding
 
-- [ ] Rename consistently (currently mixes `velajs`, `vorajs`, `velajs`)
+- [ ] Rename consistently (currently mixes `nextforge`, `vorajs`, `nextforge`)
 - [ ] Logo, brand colors, tagline
 - [ ] Dedicated documentation site (not just README)
-- [ ] npm org (`@velajs/*`) with scoped packages
+- [ ] npm org (`@nextforge/*`) with scoped packages
 - [ ] Semantic versioning + CHANGELOG.md
 
 ### 2. Auth System (real)
@@ -129,7 +129,7 @@
 
 ### 9. CLI (Production-grade)
 
-- [ ] `velajs` initializer (npm create)
+- [ ] `nextforge` initializer (npm create)
 - [ ] `make:controller` / `make:service` (currently aliased to `make:app` — not actually separate)
 - [ ] `make:middleware`, `make:plugin`, `make:test`
 - [ ] Interactive prompts (not just positional args)
@@ -187,7 +187,7 @@
 ### 14. Plugin / Extension System
 
 - [ ] Plugin lifecycle hooks (beforeRequest, afterResponse, onBoot, etc.)
-- [ ] Plugin npm packages (`@velajs/plugin-*`)
+- [ ] Plugin npm packages (`@nextforge/plugin-*`)
 - [ ] Plugin configuration UI
 - [ ] Registry / marketplace concept
 - [ ] Plugin sandboxing / isolation for safe third-party execution
@@ -223,13 +223,13 @@
 ### 17. Naming & Package Structure
 
 Current inconsistencies:
-- `package.json`: `"name": "velajs"`
-- `README.md`: `velajs`
+- `package.json`: `"name": "nextforge"`
+- `README.md`: `nextforge`
 - `src/cli/index.ts` output: `vorajs CLI`
-- Directory: `velajs`
-- User calls it `@velajs`
+- Directory: `nextforge`
+- User calls it `@nextforge`
 
-**Needed**: Pick one name (`@velajs`), rename everything, set up npm org, publish as scoped package.
+**Needed**: Pick one name (`@nextforge`), rename everything, set up npm org, publish as scoped package.
 
 ---
 
@@ -238,6 +238,6 @@ Current inconsistencies:
 | Tier | Items |
 |---|---|
 | **P0 (ship-blocking)** | Consistent naming, real auth, API error envelope, request validation middleware, CORS, CSRF, CI pipeline, vulnerability scanning |
-| **P1 (core experience)** | Working job queue, file upload, email, security headers, rate limiting, CSP, more UI components, `velajs` CLI, docs site |
+| **P1 (core experience)** | Working job queue, file upload, email, security headers, rate limiting, CSP, more UI components, `nextforge` CLI, docs site |
 | **P2 (polish)** | Form library, data fetching patterns, observability, secrets scrubbing, encryption service, testing infra, i18n, search |
 | **P3 (ecosystem)** | Plugin system with sandboxing, webhooks, audit log, feature flags, VSCode extension, marketplace, penetration testing |

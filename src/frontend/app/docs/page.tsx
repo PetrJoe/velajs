@@ -5,7 +5,7 @@ import { cn } from "@/shared/utils/cn";
 const sections = [
   {
     title: "Getting Started",
-    description: "Learn the fundamentals and set up your first velajs project.",
+    description: "Learn the fundamentals and set up your first nextforge project.",
     links: [
       { label: "Quick Start", href: "/docs/getting-started", desc: "Create and run a new project in minutes" },
       { label: "Installation", href: "/docs/installation", desc: "Prerequisites, env setup, Docker configuration" },
@@ -36,7 +36,7 @@ const sections = [
   },
   {
     title: "Community",
-    description: "Get involved and contribute to velajs.",
+    description: "Get involved and contribute to nextforge.",
     links: [
       { label: "Contributing", href: "/docs/contributing", desc: "Development setup, code style, PR checklist" },
     ],
@@ -57,13 +57,13 @@ export default function DocsPage() {
       <div className="mb-10">
         <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-sm font-medium text-slate-600 shadow-sm">
           <span className="size-2 rounded-full bg-emerald-500" />
-          velajs v0.2.7 Documentation
+          nextforge v0.2.7 Documentation
         </div>
         <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-950">
           Build enterprise Next.js applications
         </h1>
         <p className="mt-3 text-lg text-slate-600 max-w-2xl">
-          Everything you need to build with velajs — from getting started to advanced patterns,
+          Everything you need to build with nextforge — from getting started to advanced patterns,
           security, deployment, and contribution guidelines.
         </p>
       </div>
