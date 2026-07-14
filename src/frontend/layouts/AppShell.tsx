@@ -64,7 +64,7 @@ export function AppShell({ children }: { children: ReactNode }) {
             </span>
             <div className="flex items-baseline gap-1.5">
               <span className="text-base font-semibold tracking-tight">nexar</span>
-              <span className="hidden text-[10px] font-medium uppercase tracking-widest text-ink-400 sm:inline">v0.2.7</span>
+              <span className="hidden text-[10px] font-medium uppercase tracking-widest text-ink-400 sm:inline">v0.3.0</span>
             </div>
           </Link>
 
@@ -201,7 +201,7 @@ export function AppShell({ children }: { children: ReactNode }) {
             <div className="flex items-center gap-4 text-xs text-ink-400">
               <span>Built with Next.js</span>
               <span className="text-ink-300">&middot;</span>
-              <span>v0.2.7</span>
+              <span>v0.3.0</span>
             </div>
           </div>
         </div>

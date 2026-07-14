@@ -1,6 +1,6 @@
 {
   "name": "@voradev/nexar",
-  "version": "0.2.8",
+  "version": "0.3.0",
   "description": "A fullstack framework starter for Next.js, Knex, PostgreSQL, TypeScript, and Tailwind CSS.",
   "bin": {
     "nexar": "bin/nexar.js"
