@@ -1,9 +1,12 @@
 {
-  "name": "nextforge",
+  "name": "@voradev/nextforge",
   "version": "0.2.7",
   "description": "A fullstack framework starter for Next.js, Knex, PostgreSQL, TypeScript, and Tailwind CSS.",
   "bin": {
     "nextforge": "bin/nextforge.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "files": [
     "README.md",

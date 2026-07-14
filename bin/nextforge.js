@@ -94,24 +94,24 @@ async function main() {
   nextforge CLI — Create new nextforge projects
 
   Usage:
-    npx nextforge create <project-name>
+    npx @voradev/nextforge create <project-name>
 
   Examples:
-    npx nextforge create my-app
-    npx nextforge create my-blog-app
+    npx @voradev/nextforge create my-app
+    npx @voradev/nextforge create my-blog-app
 `);
     process.exit(0);
   }
 
   if (command !== "create") {
     console.error(`Unknown command: ${command}`);
-    console.error("Usage: npx nextforge create <project-name>");
+    console.error("Usage: npx @voradev/nextforge create <project-name>");
     process.exit(1);
   }
 
   if (!projectName) {
     console.error("Error: Please specify a project name.");
-    console.error("Usage: npx nextforge create <project-name>");
+    console.error("Usage: npx @voradev/nextforge create <project-name>");
     process.exit(1);
   }
 

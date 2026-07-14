@@ -38,7 +38,7 @@
 ## Quick Start
 
 ```bash
-npx nextforge create my-app
+npx @voradev/nextforge create my-app
 cd my-app
 npm install
 cp .env.example .env
