@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BookOpen, Terminal, Cpu, Lock, Database, Palette, Shield, FlaskConical, Rocket, Code2, ArrowRight, ChevronRight } from "lucide-react";
+import { cn } from "@/shared/utils/cn";
 
 const sections = [
   {
@@ -116,6 +117,4 @@ export default function DocsPage() {
   );
 }
 
-function cn(...classes: (string | false | undefined | null)[]) {
-  return classes.filter(Boolean).join(" ");
-}
+
