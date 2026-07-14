@@ -5,6 +5,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/shared/utils/cn";
 
+interface SidebarLink {
+  href: string;
+  label: string;
+}
+
 const sidebarSections = [
   {
     title: "Getting Started",
@@ -12,20 +17,20 @@ const sidebarSections = [
       { href: "/docs/getting-started", label: "Overview" },
       { href: "/docs/installation", label: "Installation" },
       { href: "/docs/architecture", label: "Architecture" },
-    ],
+    ] as SidebarLink[],
   },
   {
     title: "Reference",
     links: [
       { href: "/docs/cli", label: "CLI Reference" },
       { href: "/docs/api-reference", label: "API Reference" },
-    ],
+    ] as SidebarLink[],
   },
   {
     title: "Community",
     links: [
       { href: "/docs/contributing", label: "Contributing" },
-    ],
+    ] as SidebarLink[],
   },
 ];
 
@@ -48,7 +53,7 @@ export default function DocsLayout({ children }: { children: React.ReactNode }) 
             </button>
             <Link href="/" className="flex items-center gap-3 text-sm font-semibold tracking-tight">
               <span className="grid size-8 place-items-center rounded-lg bg-slate-950 text-[13px] text-white shadow-sm">V</span>
-              <span>velajs</span>
+              <span>nextforge</span>
             </Link>
             <span className="hidden text-sm text-slate-400 sm:inline">/</span>
             <span className="hidden text-sm font-medium text-slate-600 sm:inline">Docs</span>
@@ -80,7 +85,7 @@ export default function DocsLayout({ children }: { children: React.ReactNode }) 
                     {section.links.map((link) => (
                       <li key={link.href}>
                         <Link
-                          href={link.href}
+                          href={link.href as any}
                           onClick={() => setSidebarOpen(false)}
                           className={cn(
                             "block rounded-md px-3 py-2 text-sm font-medium transition",

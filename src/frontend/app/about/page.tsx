@@ -4,16 +4,17 @@ export default function AboutPage() {
   return (
     <AppShell>
       <main className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-semibold tracking-tight text-slate-950">About Vela</h1>
+        <h1 className="text-4xl font-semibold tracking-tight text-slate-950">About nextforge</h1>
         <p className="mt-4 text-lg leading-8 text-slate-600">
-          Vela is a fullstack starter kit built on Next.js, Knex, PostgreSQL, Zod, and Tailwind CSS.
+          nextforge is a fullstack starter kit built on Next.js, Knex, PostgreSQL, Zod, and Tailwind CSS.
           It provides structure, generators, and production-ready conventions for serious Next.js projects.
+          Built from the ground up as a modular monolith, it ships with a CLI, auth system, database layer, and UI primitives ready to go.
         </p>
 
-        <h2 className="mt-12 text-2xl font-semibold tracking-tight text-slate-950">Why Vela?</h2>
+        <h2 className="mt-12 text-2xl font-semibold tracking-tight text-slate-950">Why nextforge?</h2>
         <p className="mt-4 text-base leading-7 text-slate-600">
           Every team eventually builds scaffolding around their Next.js projects — CLI generators, database layers,
-          auth setup, UI primitives, and deployment config. Vela does this from day one, so you can focus on
+          auth setup, UI primitives, and deployment config. nextforge does this from day one, so you can focus on
           building features instead of wiring up infrastructure.
         </p>
 
@@ -27,7 +28,7 @@ export default function AboutPage() {
 
         <h2 className="mt-12 text-2xl font-semibold tracking-tight text-slate-950">License</h2>
         <p className="mt-4 text-base leading-7 text-slate-600">
-          Vela is open source and available under the MIT license.
+          nextforge is open source and available under the MIT license.
         </p>
       </main>
     </AppShell>

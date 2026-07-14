@@ -3,18 +3,19 @@
 import { useState } from "react";
 import type { ReactNode } from "react";
 import Link from "next/link";
+
 import { usePathname } from "next/navigation";
 import { cn } from "@/shared/utils/cn";
-import { Menu, X, Github, Moon, Sun, ChevronRight } from "lucide-react";
+import { Menu, X, ExternalLink, Moon, Sun, ChevronRight } from "lucide-react";
 
-const navItems = [
+const navItems: { label: string; href: string }[] = [
   { label: "Docs", href: "/docs" },
   { label: "Architecture", href: "/docs/architecture" },
   { label: "CLI", href: "/docs/cli" },
   { label: "Showcase", href: "/showcase" },
 ];
 
-const footerLinks = [
+const footerLinks: { title: string; links: { label: string; href: string }[] }[] = [
   {
     title: "Documentation",
     links: [
@@ -72,7 +73,7 @@ export function AppShell({ children }: { children: ReactNode }) {
             {navItems.map((item) => (
               <Link
                 key={item.href}
-                href={item.href}
+                href={item.href as any}
                 className={cn(
                   "rounded-lg px-3 py-2 text-sm font-medium transition-all",
                   pathname === item.href || pathname.startsWith(item.href + "/")
@@ -102,11 +103,11 @@ export function AppShell({ children }: { children: ReactNode }) {
               className="hidden rounded-lg p-2 text-ink-500 transition hover:bg-ink-100 hover:text-ink-900 sm:inline-flex dark:hover:bg-ink-800 dark:hover:text-white"
               aria-label="GitHub"
             >
-              <Github className="size-4" />
+              <ExternalLink className="size-4" />
             </a>
 
             <Link
-              href="/login"
+              href={"/login" as any}
               className="hidden rounded-lg bg-ink-900 px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-ink-700 sm:inline-flex dark:bg-white dark:text-ink-900 dark:hover:bg-slate-200"
             >
               Sign in
@@ -139,7 +140,7 @@ export function AppShell({ children }: { children: ReactNode }) {
               {navItems.map((item) => (
                 <Link
                   key={item.href}
-                  href={item.href}
+                  href={item.href as any}
                   onClick={() => setMobileOpen(false)}
                   className={cn(
                     "flex items-center justify-between rounded-lg px-3 py-2.5 text-sm font-medium transition",
@@ -155,7 +156,7 @@ export function AppShell({ children }: { children: ReactNode }) {
             </nav>
             <div className="mt-6 border-t border-border pt-6">
               <Link
-                href="/login"
+                href={"/login" as any}
                 onClick={() => setMobileOpen(false)}
                 className="flex w-full items-center justify-center rounded-lg bg-ink-900 px-4 py-2.5 text-sm font-medium text-white transition hover:bg-ink-700 dark:bg-white dark:text-ink-900 dark:hover:bg-slate-200"
               >
@@ -186,7 +187,7 @@ export function AppShell({ children }: { children: ReactNode }) {
               </p>
               <div className="mt-4 flex items-center gap-3">
                 <a href="https://github.com/nextforge/nextforge" target="_blank" rel="noopener noreferrer" className="text-ink-400 hover:text-ink-900 dark:hover:text-white transition">
-                  <Github className="size-4" />
+                  <ExternalLink className="size-4" />
                 </a>
               </div>
             </div>
@@ -199,7 +200,7 @@ export function AppShell({ children }: { children: ReactNode }) {
                   {group.links.map((link) => (
                     <li key={link.href}>
                       <Link
-                        href={link.href}
+                        href={link.href as any}
                         className="text-sm text-ink-500 transition hover:text-ink-900 dark:hover:text-white"
                       >
                         {link.label}

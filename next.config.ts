@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  typedRoutes: true,
+  typedRoutes: false,
   serverExternalPackages: ["knex", "pg"],
   reactStrictMode: true
 };

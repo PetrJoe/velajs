@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "@/frontend/styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "velajs",
+  title: "nextforge",
   description: "TypeScript-first fullstack starter for Next.js, PostgreSQL, Knex, and Tailwind CSS."
 };
 

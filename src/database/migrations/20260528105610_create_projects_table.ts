@@ -1,12 +1,13 @@
 import type { Knex } from "knex";
 
 export async function up(knex: Knex): Promise<void> {
-  await knex.schema.createTable("projects", (table) => {
-    table.uuid("id").primary().defaultTo(knex.raw("gen_random_uuid()"));
-    table.timestamps(true, true);
+  await knex.schema.alterTable("users", (table) => {
+    table.string("password_hash").notNullable().defaultTo("");
   });
 }
 
 export async function down(knex: Knex): Promise<void> {
-  await knex.schema.dropTableIfExists("projects");
+  await knex.schema.alterTable("users", (table) => {
+    table.dropColumn("password_hash");
+  });
 }

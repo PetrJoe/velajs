@@ -41,7 +41,7 @@ export default function HomePage() {
               </h1>
 
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-                Vela is a fullstack starter that brings structure, generators, PostgreSQL workflows, typed validation, and Tailwind UI conventions to serious Next.js projects.
+                nextforge is a fullstack starter that brings structure, generators, PostgreSQL workflows, typed validation, and Tailwind UI conventions to serious Next.js projects.
               </p>
 
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">

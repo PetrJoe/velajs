@@ -1,4 +1,5 @@
 import { ZodError } from "zod";
+import { failure } from "@/core/middleware/api-response";
 
 export class ApiError extends Error {
   constructor(
@@ -13,15 +14,12 @@ export class ApiError extends Error {
 
 export function errorResponse(error: unknown) {
   if (error instanceof ZodError) {
-    return Response.json(
-      { error: { code: "VALIDATION_ERROR", message: "Invalid request payload", details: error.flatten() } },
-      { status: 422 }
-    );
+    return failure("VALIDATION_ERROR", "Invalid request payload", 422, error.flatten());
   }
 
   if (error instanceof ApiError) {
-    return Response.json({ error: { code: error.code, message: error.message, details: error.details } }, { status: error.status });
+    return failure(error.code, error.message, error.status, error.details);
   }
 
-  return Response.json({ error: { code: "INTERNAL_ERROR", message: "Unexpected server error" } }, { status: 500 });
+  return failure("INTERNAL_ERROR", "Unexpected server error", 500);
 }

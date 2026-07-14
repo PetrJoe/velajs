@@ -15,12 +15,12 @@ export default function RegisterPage() {
         <div className="mb-8 text-center">
           <Link href="/" className="inline-flex items-center gap-3 text-sm font-semibold tracking-tight">
             <span className="grid size-8 place-items-center rounded-lg bg-slate-950 text-[13px] text-white shadow-sm">V</span>
-            <span className="text-slate-950">velajs</span>
+            <span className="text-slate-950">nextforge</span>
           </Link>
           <h1 className="mt-6 text-2xl font-semibold tracking-tight text-slate-950">Create your account</h1>
           <p className="mt-2 text-sm text-slate-600">
             Already have an account?{" "}
-            <Link href="/login" className="font-medium text-slate-950 underline">
+            <Link href={"/login" as any} className="font-medium text-slate-950 underline">
               Sign in
             </Link>
           </p>
