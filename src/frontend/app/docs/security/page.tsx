@@ -10,7 +10,7 @@ export default function SecurityPage() {
       </div>
       <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-950">Security</h1>
       <p className="mt-3 text-lg text-slate-600 max-w-2xl">
-        nextforge ships with security built in at every layer — from HTTP headers and CSP to authentication,
+        velajs ships with security built in at every layer — from HTTP headers and CSP to authentication,
         authorization, CSRF protection, and rate limiting.
       </p>
 

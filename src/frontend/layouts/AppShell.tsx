@@ -63,7 +63,7 @@ export function AppShell({ children }: { children: ReactNode }) {
               N
             </span>
             <div className="flex items-baseline gap-1.5">
-              <span className="text-base font-semibold tracking-tight">nextforge</span>
+              <span className="text-base font-semibold tracking-tight">velajs</span>
               <span className="hidden text-[10px] font-medium uppercase tracking-widest text-ink-400 sm:inline">v0.2.7</span>
             </div>
           </Link>
@@ -97,7 +97,7 @@ export function AppShell({ children }: { children: ReactNode }) {
             </button>
 
             <a
-              href="https://github.com/nextforge/nextforge"
+              href="https://github.com/velajs/velajs"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden rounded-lg p-2 text-ink-500 transition hover:bg-ink-100 hover:text-ink-900 sm:inline-flex dark:hover:bg-ink-800 dark:hover:text-white"
@@ -105,13 +105,6 @@ export function AppShell({ children }: { children: ReactNode }) {
             >
               <ExternalLink className="size-4" />
             </a>
-
-            <Link
-              href={"/login" as any}
-              className="hidden rounded-lg bg-ink-900 px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-ink-700 sm:inline-flex dark:bg-white dark:text-ink-900 dark:hover:bg-slate-200"
-            >
-              Sign in
-            </Link>
 
             {/* Mobile menu button */}
             <button
@@ -154,15 +147,6 @@ export function AppShell({ children }: { children: ReactNode }) {
                 </Link>
               ))}
             </nav>
-            <div className="mt-6 border-t border-border pt-6">
-              <Link
-                href={"/login" as any}
-                onClick={() => setMobileOpen(false)}
-                className="flex w-full items-center justify-center rounded-lg bg-ink-900 px-4 py-2.5 text-sm font-medium text-white transition hover:bg-ink-700 dark:bg-white dark:text-ink-900 dark:hover:bg-slate-200"
-              >
-                Sign in
-              </Link>
-            </div>
           </div>
         </div>
       )}
@@ -180,13 +164,13 @@ export function AppShell({ children }: { children: ReactNode }) {
                 <span className="grid size-8 place-items-center rounded-lg bg-ink-900 text-xs font-bold text-white dark:bg-white dark:text-ink-900">
                   N
                 </span>
-                <span className="text-sm font-semibold">nextforge</span>
+                <span className="text-sm font-semibold">velajs</span>
               </Link>
               <p className="mt-3 text-xs leading-5 text-ink-500">
                 TypeScript-first fullstack framework for Next.js, PostgreSQL, and modern web applications.
               </p>
               <div className="mt-4 flex items-center gap-3">
-                <a href="https://github.com/nextforge/nextforge" target="_blank" rel="noopener noreferrer" className="text-ink-400 hover:text-ink-900 dark:hover:text-white transition">
+                <a href="https://github.com/velajs/velajs" target="_blank" rel="noopener noreferrer" className="text-ink-400 hover:text-ink-900 dark:hover:text-white transition">
                   <ExternalLink className="size-4" />
                 </a>
               </div>
@@ -213,7 +197,7 @@ export function AppShell({ children }: { children: ReactNode }) {
           </div>
 
           <div className="mt-10 border-t border-border pt-6 flex flex-col items-center justify-between gap-4 sm:flex-row">
-            <p className="text-xs text-ink-400">&copy; {new Date().getFullYear()} nextforge. MIT License.</p>
+            <p className="text-xs text-ink-400">&copy; {new Date().getFullYear()} velajs. MIT License.</p>
             <div className="flex items-center gap-4 text-xs text-ink-400">
               <span>Built with Next.js</span>
               <span className="text-ink-300">&middot;</span>

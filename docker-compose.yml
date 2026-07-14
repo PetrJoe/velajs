@@ -4,7 +4,7 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_DB: nextforge
+      POSTGRES_DB: velajs
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     volumes:

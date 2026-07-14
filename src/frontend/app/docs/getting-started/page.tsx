@@ -8,7 +8,7 @@ export default function GettingStartedPage() {
         <span className="size-2 rounded-full bg-emerald-500" />
         Getting Started
       </div>
-      <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-950">Build your first nextforge application</h1>
+      <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-950">Build your first velajs application</h1>
       <p className="mt-3 text-lg text-slate-600 max-w-2xl">
         Learn how to create a new project, configure your environment, run database migrations,
         and start the development server.
@@ -19,8 +19,8 @@ export default function GettingStartedPage() {
       </div>
 
       <Section title="1. Create a new project">
-        <p>Scaffold a new nextforge project using the CLI:</p>
-        <CodeBlock>{`npx nextforge create my-app
+        <p>Scaffold a new velajs project using the CLI:</p>
+        <CodeBlock>{`npx velajs create my-app
 cd my-app
 npm install`}</CodeBlock>
         <p>This creates a complete project structure with all framework modules, database configuration,

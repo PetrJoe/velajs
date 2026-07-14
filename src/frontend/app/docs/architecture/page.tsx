@@ -10,7 +10,7 @@ export default function ArchitecturePage() {
       </div>
       <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-950">Architecture Overview</h1>
       <p className="mt-3 text-lg text-slate-600 max-w-2xl">
-        nextforge follows a modular monolith architecture with clear separation of concerns,
+        velajs follows a modular monolith architecture with clear separation of concerns,
         designed for teams that need structure without sacrificing flexibility.
       </p>
 

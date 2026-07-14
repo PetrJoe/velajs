@@ -1,1 +1,0 @@
-export { default } from "@/frontend/app/register/page";

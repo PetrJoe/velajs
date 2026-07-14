@@ -10,7 +10,7 @@ export default function DatabasePage() {
       </div>
       <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-950">Database</h1>
       <p className="mt-3 text-lg text-slate-600 max-w-2xl">
-        nextforge uses Knex.js for database access — providing explicit SQL, migration workflow,
+        velajs uses Knex.js for database access — providing explicit SQL, migration workflow,
         and a typed repository pattern with built-in pagination.
       </p>
 

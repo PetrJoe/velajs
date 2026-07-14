@@ -9,7 +9,7 @@ export default function InstallationPage() {
       </div>
       <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-950">Installation & Setup</h1>
       <p className="mt-3 text-lg text-slate-600 max-w-2xl">
-        Complete guide to setting up your nextforge environment, from prerequisites to production configuration.
+        Complete guide to setting up your velajs environment, from prerequisites to production configuration.
       </p>
 
       <Section title="Prerequisites">
@@ -24,7 +24,7 @@ export default function InstallationPage() {
 
       <Section title="Quick Start">
         <p>Scaffold a new project with a single command:</p>
-        <CodeBlock>{`npx nextforge create my-project
+        <CodeBlock>{`npx velajs create my-project
 cd my-project
 npm install`}</CodeBlock>
       </Section>
@@ -90,7 +90,7 @@ npm install`}</CodeBlock>
         <p>For local development with Docker, use the provided <InlineCode>docker-compose.yml</InlineCode>:</p>
         <CodeBlock>{`docker compose up -d
 npm run dev`}</CodeBlock>
-        <p>This starts a PostgreSQL instance on port 5432. The database name is <InlineCode>nextforge</InlineCode>
+        <p>This starts a PostgreSQL instance on port 5432. The database name is <InlineCode>velajs</InlineCode>
         and the default credentials are configured in the compose file.</p>
 
         <div className="mt-4 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">

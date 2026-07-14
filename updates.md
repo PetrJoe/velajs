@@ -1,8 +1,8 @@
-# @nextforge — Framework Audit & Roadmap
+# @velajs — Framework Audit & Roadmap
 
 ## Current state
 
-@nextforge (internally `velajs`, v0.2.7) is a **fullstack starter** built on Next.js, Knex, PostgreSQL, Zod, and Tailwind. It provides structure and generators but is not yet a **standard framework** in the ecosystem sense.
+@velajs (internally `velajs`, v0.2.7) is a **fullstack starter** built on Next.js, Knex, PostgreSQL, Zod, and Tailwind. It provides structure and generators but is not yet a **standard framework** in the ecosystem sense.
 
 ### What exists today
 
@@ -37,10 +37,10 @@
 
 ### 1. Identity & Branding
 
-- [ ] Rename consistently (currently mixes `velajs`, `vorajs`, `nextforge`)
+- [ ] Rename consistently (currently mixes `velajs`, `vorajs`, `velajs`)
 - [ ] Logo, brand colors, tagline
 - [ ] Dedicated documentation site (not just README)
-- [ ] npm org (`@nextforge/*`) with scoped packages
+- [ ] npm org (`@velajs/*`) with scoped packages
 - [ ] Semantic versioning + CHANGELOG.md
 
 ### 2. Auth System (real)
@@ -187,7 +187,7 @@
 ### 14. Plugin / Extension System
 
 - [ ] Plugin lifecycle hooks (beforeRequest, afterResponse, onBoot, etc.)
-- [ ] Plugin npm packages (`@nextforge/plugin-*`)
+- [ ] Plugin npm packages (`@velajs/plugin-*`)
 - [ ] Plugin configuration UI
 - [ ] Registry / marketplace concept
 - [ ] Plugin sandboxing / isolation for safe third-party execution
@@ -226,10 +226,10 @@ Current inconsistencies:
 - `package.json`: `"name": "velajs"`
 - `README.md`: `velajs`
 - `src/cli/index.ts` output: `vorajs CLI`
-- Directory: `nextforge`
-- User calls it `@nextforge`
+- Directory: `velajs`
+- User calls it `@velajs`
 
-**Needed**: Pick one name (`@nextforge`), rename everything, set up npm org, publish as scoped package.
+**Needed**: Pick one name (`@velajs`), rename everything, set up npm org, publish as scoped package.
 
 ---
 
