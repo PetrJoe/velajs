@@ -45,10 +45,10 @@ export default function HomePage() {
               </p>
 
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-                <a href="#" className="inline-flex h-11 items-center justify-center rounded-md bg-slate-950 px-5 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800">
+                <a href="/docs/getting-started" className="inline-flex h-11 items-center justify-center rounded-md bg-slate-950 px-5 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800">
                   Start a project
                 </a>
-                <a href="#" className="inline-flex h-11 items-center justify-center rounded-md border border-slate-200 bg-white px-5 text-sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50">
+                <a href="/docs/architecture" className="inline-flex h-11 items-center justify-center rounded-md border border-slate-200 bg-white px-5 text-sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50">
                   Explore architecture
                 </a>
               </div>
