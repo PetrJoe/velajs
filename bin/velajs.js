@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-import { execSync } from "node:child_process";
-import { copyFileSync, mkdirSync, readdirSync, writeFileSync, existsSync } from "node:fs";
-import { join, resolve } from "node:path";
-import { createInterface } from "node:readline";
+const { execSync } = require("node:child_process");
+const { copyFileSync, mkdirSync, readdirSync, writeFileSync, existsSync } = require("node:fs");
+const { join, resolve } = require("node:path");
+const { createInterface } = require("node:readline");
 
 const SCRIPTS = {
   dev: "next dev",
@@ -121,7 +121,7 @@ async function main() {
   }
 
   const targetDir = resolve(process.cwd(), projectName);
-  const sourceDir = resolve(new URL(import.meta.url).pathname, "../..");
+  const sourceDir = resolve(__dirname, "..");
 
   if (existsSync(targetDir)) {
     const answer = await prompt(`Directory "${projectName}" already exists. Overwrite? (y/N) `);
